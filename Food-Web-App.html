@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD App Web</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(211, 64, 89);
+            overflow: hidden;
+        }
+
+        body {
+            background-color: rgb(241, 186, 194);
+        }
+
+        .Hmpage {
+            margin: 180px;
+            /* display: flex; */
+        }
+
+        #homehead {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 38px;
+        }
+
+        .homeheader {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 21px;
+        }
+
+        .Hmpage .content-right{
+            display: block;
+        }
+
+        .Hmpage .content-right img {
+            float: right;
+            margin-top: -400px;
+            margin-left: -250px;
+            width: 250px;
+            position: relative;
+            animation: rotate 10s linear infinite;
+        }
+
+        /* #Content-right img 
+        ===============Animation================ */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        header li {
+            float: left;
+        }
+
+        header li a {
+            display: block;
+            color: white;
+            padding: 12px 14px;
+            text-decoration: none;
+        }
+
+        header li a:hover {
+            background-color: black;
+        }
+
+        .items li a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-weight: lighter;
+        }
+
+        /* .items li a{
+            scroll-behavior: smooth;
+        }*/
+        .dishes {
+            width: 500px;
+            height: 500px;
+        }
+
+        .image {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .image img {
+            width: 50%;
+        }
+
+        .image p {
+            margin-bottom: 50px;
+        }
+
+        #cake {
+            margin-top: 100px;
+        }
+
+        #pizza {
+            margin-top: 100px;
+        }
+
+        #chowmein {
+            margin-top: 100px;
+        }
+
+        #idlidosa {
+            margin-top: 100px;
+        }
+
+        .labels {
+            font-size: 18px;
+        }
+
+        button {
+            border-radius: 15px;
+            width: 100px;
+            height: 33px;
+            color: black;
+            background-color: rgb(241, 186, 194);
+            border: 1.5px solid black;
+            margin-top: 5px;
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        #btn {
+            background-color: green;
+            margin-top: -50px;
+        }
+
+        #button {
+            float: right;
+        }
+
+        button:hover {
+            background-color: rgb(75, 165, 14);
+        }
+
+        #drop_down {
+            width: 17px;
+        }
+
+        .child {
+            background-color: rgb(211, 64, 89);
+            height: 40px;
+            padding-bottom: 20px;
+        }
+        #smrtBndhu{
+            color: rgb(250, 204, 22);
+            font-weight: bold;
+            font-size: 25px;
+            font-family: cursive;
+        }
+        .child h3 {
+            padding: 11px 0px 0px 8px;
+        }
+
+        .parent {
+            background-color: rgb(211, 64, 89);
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#main">Menu</a>
+            </li>
+            <li><a href="#">Services
+                    <select name="" id="drop_down">
+                        <option> </option>
+                        <option>Free Shipping</option>
+                        <option>Pouch Packaging</option>
+                        <option>Reasonable Price</option>
+                    </select>
+                </a></li>
+            <li><a href="#">Contact Us
+                    <select name="" id="drop_down">
+                        <option> </option>
+                        <option>91-0123548949</option>
+                        <option>91-9549814782</option>
+                    </select>
+                </a></li>
+            <ul id="button">
+                <li><button><b>Sign In</b></button></li>
+                <li><button><b>Sign Up</b></button></li>
+            </ul>
+        </ul>
+    </header>
+
+    <main id="home">
+        <div class="Hmpage">
+            <h1 id="homehead">Order Your <span style="color: rgb(211, 64, 89); font-family: cursive;">Best</br> Food </span>anytime </h1>
+            <div class="homeheader">
+                <h4>Hey, Our delicious food is waiting for you.</br>
+                    We are always near to you with fresh item of food.</h4>
+                </br> </br>
+                <h3>Popular Dishes</h3>
+                <span style="color: rgb(211, 64, 89); font-weight: bold;"># Maggie </br>
+                # chowmein</span>
+            </div>
+
+
+            <div class="content-right">
+                <img src= "C:\Users\nirma\Downloads\cheese_maggie-modified.png" alt="" />
+            </div>
+        </div>
+    </main>
+
+    <main id="main">
+        <br>
+        <h2 style="font-weight: bold; font-size: 30px;">--Menus--</h2>
+        <div class="items">
+            <ul>
+                <li><a href="#maggie">Maggie</a></li>
+                <li><a href="#cake">Cake</a></li>
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#chowmein">Chow Mein</a></li>
+                <li><a href="#idlidosa">Idli Dosa </a></li>
+            </ul>
+        </div>
+
+        <div class="image">
+
+            <div id="maggie"> <img src="https://i.ytimg.com/vi/y3pnmu6iuDQ/maxresdefault.jpg" class="dishes" /> </div>
+            <p class="labels"><b>Maggie</b> : Rs.175/- </p>
+            <button id="btn">order</button>
+            <div id="cake"> <img
+                    src="https://assets.winni.in/c_limit,dpr_1,fl_progressive,q_80,w_1000/83221_yummylicious-chocolate-cake.jpeg"
+                    class="dishes" /></div>
+            <p class="labels"><b>Cake</b>: Rs.380/- </p>
+            <button id="btn">order</button>
+            <div id="pizza"><img
+                    src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=2000"
+                    class="dishes" /></div>
+            <p class="labels"><b>Pizza</b> : Rs.550/-</p>
+            <button id="btn">order</button>
+            <div id="chowmein"><img src="https://greenbowl2soul.com/wp-content/uploads/2019/11/vegetable-chow-mein.jpg"
+                    class="dishes" /></div>
+            <p class="labels"><b>Chow Mein</b> : Rs.225/-</p>
+            <button id="btn">order</button>
+            <div id="idlidosa"> <img src="https://rakskitchen.net/wp-content/uploads/2017/09/idli-batter-mixie.jpg"
+                    class="dishes" /> </div>
+            <p class="labels"><b>Idali Dosa</b> : Rs.385/-</p>
+            <button id="btn">order</button>
+
+        </div>
+    </main>
+
+    <section>
+        <div>
+            <div class="child">
+                <h3>Trusted By <span id="smrtBndhu">Smart </span> Bandhu</h3>
+            </div>
+            <div class="parent">
+                <div class="child1">
+                    <h4>ABOUT US</h4>
+                </div>
+                <div class="child2">
+                    <h4>SERVICES</h4>
+                </div>
+                <div class="child3">
+                    <h4>CONTACT US</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
